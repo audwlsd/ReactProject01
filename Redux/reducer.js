@@ -55,7 +55,7 @@ function applyStartTimer(state) {
     }
 }
 
-function applyRetartTimer(state) {
+function applyRestartTimer(state) {
     return {
         ...state,
         isPlaying: false,
@@ -84,5 +84,9 @@ const actionCreators = {
     restartTimer,
     addSecond
 }
+
+// 반드시 export 해야함!!
+export { actionCreators }
+
 //export reducer
 export default reducer
